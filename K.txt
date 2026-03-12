@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K</title>
+<link rel="icon" type="image/png" href="Cfi.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Libre Baskerville', serif;
+background:#EFE6D8;
+color:#6A5847;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:80px 20px;
+}
+
+/* IMAGE CIRCLE */
+.image-container{
+width:350px;
+height:350px;
+border-radius:50%;
+overflow:hidden;
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+margin-bottom:60px;
+}
+
+.image-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* CARD */
+.card{
+background:white;
+max-width:600px;
+padding:60px;
+box-shadow:0 15px 30px rgba(0,0,0,0.06);
+line-height:1.9;
+text-align:center;
+}
+
+h1{
+font-size:70px;
+font-weight:300;
+letter-spacing:8px;
+margin-bottom:30px;
+}
+
+.divider{
+width:50px;
+height:1px;
+background:#CBBBA7;
+margin:30px auto;
+}
+
+.footer{
+margin-top:60px;
+letter-spacing:3px;
+font-size:14px;
+}
+
+/* LINK STYLE */
+.link-box{
+display:inline-block;
+margin-top:30px;
+padding:10px 25px;
+border-radius:25px;
+background:#EFE6D8;
+color:#6A5847;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+.link-box:hover{
+background:#CBBBA7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="image-container">
+    <img src="cookies.jpg">
+</div>
+
+<div class="card">
+    <h1>K</h1>
+
+    <div class="divider"></div>
+
+    keeper of sweetness.  
+    keeper of comfort.  
+    keeper of the little things that matter most.  
+
+    <br><br>
+
+    like cookies in a tin,  
+    you hold memories carefully.  
+
+    warm. familiar. safe.  
+
+    <br><br>
+
+    you are not loud.  
+    you are lasting.
+
+    <br><br>
+
+    Y
+
+    <br><br>
+
+    <a href="Special Just For You.html">Special Just For You</a>
+
+
+</div>
+
+<div class="footer">
+mtk series • chapter iii
+</div>
+
+</body>
+</html>

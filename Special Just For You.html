@@ -1,0 +1,282 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Day</title>
+<link rel="icon" type="image/png" href="fi.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #e8e1d6;
+    color: #5c5248;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Fade animation */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Landing */
+
+.landing {
+    flex-direction: column;
+}
+
+.landing h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.enter-btn {
+    padding: 10px 30px;
+    border: 1px solid #b9a99a;
+    background: transparent;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.enter-btn:hover {
+    background-color: #d8cfc3;
+}
+
+/* Things Section */
+
+.things {
+    flex-direction: column;
+}
+
+.things h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #dfd6cb;
+    padding: 25px;
+    width: 220px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    background-color: #d4c9bc;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.card p {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transition: all 0.5s ease;
+    font-size: 0.95rem;
+}
+
+.card.active p {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+/* Letter Section */
+
+.letter-section {
+    flex-direction: column;
+}
+
+.letter-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.letter-box {
+    background-color: #f4efe8;
+    padding: 50px;
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.letter-box p {
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .landing h1 {
+        font-size: 2.2rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="landing">
+    <div class="fade-in">
+        <h1>march 15th.</h1>
+        <p>the day the world became softer.</p>
+        <button class="enter-btn" onclick="scrollToSection()">enter</button>
+    </div>
+</section>
+
+<section class="things">
+    <div class="fade-in">
+        <h2>things that feel like you</h2>
+
+        <div class="cards">
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>warm hands</h3>
+                <p>you make everything feel safe.</p>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>quiet laugh</h3>
+                <p>my favorite sound in the world.</p>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>vanilla mornings</h3>
+                <p>soft and sweet, just like you.</p>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>safe place</h3>
+                <p>thank you for always being home.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="letter-section">
+    <div class="fade-in">
+        <h2>Special For You</h2>
+
+        <div class="letter-box">
+            <p>dear love,</p>
+
+            <p>on a quiet morning like this,  
+            i’m grateful the world was given you.</p>
+
+            <p>you make ordinary days feel softer.  
+            you turn heavy moments into something lighter.</p>
+
+            <p>thank you for being my calm  
+            in every season.</p>
+
+            <p>i hope this year holds  
+            the same warmth  
+            you give so freely to everyone else.</p>
+
+            <p>happy birthday, my love &lt;3</p>
+        </div>
+
+    </div>
+</section>
+
+<div style="text-align:center; margin-bottom:40px;">
+    <a href="M.html">Going Back To Chapter I</a>
+</div>
+
+<footer class="footer">
+    mtk series • by tky
+</footer>
+
+<script>
+
+function scrollToSection() {
+    document.querySelector(".things").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function toggleCard(card) {
+    card.classList.toggle("active");
+}
+
+const faders = document.querySelectorAll(".fade-in");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+        }
+    });
+});
+
+faders.forEach(el => observer.observe(el));
+
+</script>
+
+</body>
+</html>
+```

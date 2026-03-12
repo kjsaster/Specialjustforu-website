@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M</title>
+<link rel="icon" type="image/png" href="Vfi.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Cormorant Garamond',serif;
+background:#F5F1EA;
+color:#5E5448;
+}
+
+/* HERO SECTION */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(245,241,234,0.85),rgba(245,241,234,0.85)),
+           url('vanilla.jpg') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+h1{
+font-size:90px;
+letter-spacing:10px;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:20px;
+letter-spacing:3px;
+margin-bottom:40px;
+}
+
+.line{
+width:60px;
+height:1px;
+background:#BFAF9F;
+margin:20px auto;
+}
+
+/* LETTER SECTION */
+.section{
+padding:100px 20px;
+text-align:center;
+}
+
+.letter{
+max-width:600px;
+margin:auto;
+background:white;
+padding:60px;
+box-shadow:0 15px 30px rgba(0,0,0,0.05);
+line-height:1.9;
+font-size:18px;
+}
+
+.signature{
+margin-top:40px;
+font-style:italic;
+}
+
+/* LINK STYLE */
+.link-box{
+display:inline-block;
+margin-top:40px;
+padding:10px 25px;
+border-radius:25px;
+background:#EFE6D8;
+color:#5E5448;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+transition:0.3s;
+}
+
+.link-box:hover{
+background:#BFAF9F;
+}
+
+footer{
+text-align:center;
+padding:60px;
+font-size:18px;
+letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>M</h1>
+    <div class="line"></div>
+    <p class="subtitle">a summer soul in soft vanilla light</p>
+    <p class="subtitle">mtk series • chapter i</p>
+</div>
+
+<div class="section">
+    <div class="letter">
+        Dear M,<br><br>
+
+        you were born in summer,  
+        and maybe that’s why everything feels warmer around you.<br><br>
+
+        soft like linen in the morning,  
+        sweet like vanilla in the air,  
+        calm in a way that makes the world slower.<br><br>
+
+        you are gentle strength.  
+        you are quiet light.  
+        you are my favorite kind of warmth.<br><br>
+
+        <div class="signature">
+            T
+        </div>
+
+      <a href="T.html">Chapter II</a>
+
+
+    </div>
+</div>
+
+<footer>
+    stay soft. stay golden.
+</footer>
+
+</body>
+</html>
